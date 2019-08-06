@@ -11,6 +11,17 @@
 
 %define enable_kernel_update 1
 
+%define straggler_files \
+/init.class_main.sh\
+/init.qcom.class_core.sh\
+/init.qcom.early_boot.sh\
+/init.qcom.sh\
+/init.qcom.syspart_fixup.sh\
+/init.qcom.usb.sh\
+/selinux_version\
+/service_contexts\
+%{nil}
+
 %include rpm/dhd/droid-hal-device.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
